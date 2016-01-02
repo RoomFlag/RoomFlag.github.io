@@ -1,6 +1,6 @@
 
 var options = {
-    useEasing : true,
+    useEasing : false,
     useGrouping : true,
     separator : ',',
     decimal : '.',
@@ -18,8 +18,11 @@ startCountUp = function(){
 
 $(function(){
 
-    var counter1 = new CountUp("roomCounter1", 0, 127101, 0, 3, options);
-    var counter2 = new CountUp("roomCounter2", 0, 127101, 0, 3, options);
+    var numCounts = 127101;
+    var numStart = 0; //numCounts * .9;
+
+    var counter1 = new CountUp("roomCounter1", numStart, numCounts, 0, 2.5, options);
+    var counter2 = new CountUp("roomCounter2", numStart, numCounts, 0, 2.5, options);
 
 
     whenHandlerIsVisible($('#roomCounter1'), function(){
