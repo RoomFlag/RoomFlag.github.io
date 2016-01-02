@@ -12,6 +12,11 @@
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/blocs.js"></script>
+
+    <script type="text/javascript" src="./lib/countUp.js"></script>
+    <script type="text/javascript" src="./lib/so/isElementInViewport.js"></script>
+    <script type="text/javascript" src="./js/lw.js"></script>
+
     
     <title></title>
 </head>
@@ -73,13 +78,13 @@
         <div class="container bloc-lg">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="img/roomflag_frontDesk.jpg" class="img-responsive img-rd animated fadeIn center-block" />
+                    <img src="img/roomflag_frontDesk.jpg" class="img-responsive img-rd center-block" />
                 </div>
                 <div class="col-sm-4">
-                    <img src="img/roomflag_still_wall.png" class="img-responsive img-rd animated fadeIn center-block" />
+                    <img src="img/roomflag_still_wall.png" class="img-responsive img-rd center-block" />
                 </div>
                 <div class="col-sm-4">
-                    <img src="img/roomflag_multi_device.jpg" class="img-responsive img-rd animated fadeIn center-block" />
+                    <img src="img/roomflag_multi_device.jpg" class="img-responsive img-rd center-block" />
                 </div>
             </div>
         </div>
@@ -152,7 +157,7 @@
 						<div class="panel bgc-white">
 							<div class="panel-body">
 								<h2 class="text-center tc-outer-space mg-clear">
-									<strong>127,101</strong> Room-statuses tracked
+									<strong><span id="roomCounter1">127,101</span></strong> Room-statuses tracked
 								</h2>
 							</div>
 						</div>
@@ -406,7 +411,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h3 class="text-center mg-md">
-					Thanks to our Customers and Supporters
+					Thanks to some of our Customers and Supporters
 				</h3>
 			</div>
 			<div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -440,7 +445,7 @@
 					Brazils waxing center
 				</h2>
 				<p>
-					Brazils uses RoomFlag in all of their locations spanning multiple cities. RoomFlag removed a bottleneck at check-in by removing the need to keep the nursing stations near the receptionist. It also removed the need to print out assignments for their technicians. Brazils handles more clients per day with RoomFlag.<br /><br /><a class="ltc-outer-space" onclick="scrollToTarget('1')">→ watch video</a>
+					Brazils uses RoomFlag in all of their locations spanning multiple cities. RoomFlag removed a bottleneck at check-in by removing the need to keep the nursing stations near the receptionist. It also removed the need to print out assignments for their technicians as clients walked in. Brazils handles more clients per day with RoomFlag.<br /><br /><a class="ltc-outer-space" onclick="scrollToTarget('1')">→ watch video</a>
 				</p>
 			</div>
 		</div>
@@ -463,7 +468,7 @@
 					<a href="index.html" class="btn   btn-glossy btn-xl btn-islamic-green">Start now</a>
 				</div>
 				<h2 class="text-center  tc-outer-space mg-lg">
-					<strong><br />127,101</strong> Room-statuses tracked, and counting.
+					<strong><br /><span id="roomCounter2">127,101</span></strong> Room-statuses tracked, and counting.
 				</h2>
 			</div>
 		</div>
