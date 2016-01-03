@@ -21,8 +21,8 @@ $(function(){
     var numCounts = 127101;
     var numStart = 0; //numCounts * .9;
 
-    var counter1 = new CountUp("roomCounter1", numStart, numCounts, 0, 2.5, options);
-    var counter2 = new CountUp("roomCounter2", numStart, numCounts, 0, 2.5, options);
+    var counter1 = new CountUp("roomCounter1", numStart, numCounts, 0, 1.5, options);
+    var counter2 = new CountUp("roomCounter2", numStart, numCounts, 0, 1.5, options);
 
 
     whenHandlerIsVisible($('#roomCounter1'), function(){
