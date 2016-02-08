@@ -954,3 +954,13 @@ iframe {
 input.form-control.email {
     height: 4em;
 }
+
+.loginButton {
+  background: #ffffff;
+  border-radius: 5px;
+  color: #000 !important;
+}
+
+.loginButton:hover {
+  background:#F1F1F1;
+}
