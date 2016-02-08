@@ -14,6 +14,7 @@
         <script src="./js/jquery-2.1.0.min.js"></script>
         <script src="./js/bootstrap.js"></script>
         <script src="./js/blocs.js"></script>
+        <script src="js/login-state.js"></script>
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,6 +23,14 @@
 
         ga('create', 'UA-71923111-1', 'auto');
         ga('send', 'pageview');
+
+        var loginState = LoginState.get("loginState");
+        if(loginState) {
+                window.location.href = "http://app.roomflag.com";            
+        } else {
+            // user has not loggedIn yet.
+            console.log("NO LOGIN STATE FOUND")
+        }
 
     </script>
         <script src='./js/jqBootstrapValidation.js'></script>
@@ -88,7 +97,7 @@
                                                 Email
 </label>
                                             <input class="form-control email" type="email" required placeholder="email address"/>
-                                        </div>                                         
+                                        </div>
                                         <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
                                             Notify me when it's ready
 </button>
@@ -172,10 +181,10 @@
                                             <form class="emailForm" action="javascript:return;" novalidate>
                                                 <h2 class="text-center tc-outer-space mg-md"><strong>100,000+</strong> Room-statuses tracked</h2>
                                                 <p class="text-left text-center  mg-md">
-										We're re-opening new registrations by February 2016. Let us remind you when it's ready.</p>
+										We're re-opening new registrations soon. Let us remind you when it's ready.</p>
                                                 <div class="form-group">
                                                     <input class="form-control email" type="email" required placeholder="email address"/>
-                                                </div>                                                 
+                                                </div>
                                                 <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
                                                     Notify me when it's ready
 </button>
@@ -447,13 +456,13 @@
                                 <h1 class="mg-md text-center  tc-outer-space">
 						Start saving time</h1>
                                 <p class="mg-lg text-left text-center ">
-						We're re-opening new registrations by February 2016.</p>
+						We're re-opening new registrations by soon.</p>
                                 <div class="form-group">
                                     <label>
                                         Email
 </label>
                                     <input class="form-control email" type="email" required placeholder="email address"/>
-                                </div>                                 
+                                </div>
                                 <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
                                     Notify me when it's ready
 </button>
