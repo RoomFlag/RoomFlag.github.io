@@ -678,6 +678,10 @@ iframe {
     background-color: #D5FEFD;
 }
 
+.bgc-light-azure {
+    background-color: #DBEDFF;
+}
+
 /* Text colour styles */
 
 .tc-white {
@@ -698,6 +702,21 @@ iframe {
 }
 
 /* Button colour styles */
+
+.btn-white {
+    background: #FFFFFF;
+    color: #0D86FF !important;
+}
+
+.btn-azure {
+    background: #0D86FF;
+    color: #FFFFFF !important;
+}
+
+.btn-azure:hover {
+    background: #0d7ef3;
+    color: #FFFFFF !important;
+}
 
 .btn-islamic-green {
     background: #05C600;

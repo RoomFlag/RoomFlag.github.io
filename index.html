@@ -1,21 +1,21 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-        <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-        <link rel='stylesheet' href='./css/animate.css'/>
-        <link rel='stylesheet' href='./css/et-line.min.css'/>
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <script src="./js/jquery-2.1.0.min.js"></script>
-        <script src="./js/bootstrap.js"></script>
-        <script src="./js/blocs.js"></script>
-        <script src="./js/login_state.js"></script>
-        <script>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
+    <link rel='stylesheet' href='./css/animate.css'/>
+    <link rel='stylesheet' href='./css/et-line.min.css'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    <script src="./js/login_state.js"></script>
+    <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -26,509 +26,467 @@
 
         var loginState = LoginState.get("loginState");
         if(loginState) {
-                window.location.href = "http://app.roomflag.com";
+            window.location.href = "http://app.roomflag.com";
         } else {
             // user has not loggedIn yet.
             console.log("NO LOGIN STATE FOUND")
         }
 
     </script>
-        <script src='./js/jqBootstrapValidation.js'></script>
-        <script src='./js/formHandler.js'></script>
-        <title></title>
-    </head>
-    <body>
-        <!-- Main container -->
-        <div class="page-container">
-            <!-- Hero Bloc -->
-            <div id="hero-bloc" class="bloc hero bgc-white b-divider bg-Meeting-Room d-bloc">
-                <div class="video-bg-contianer">
-                    <video class="bloc-video" preload="auto" loop="loop" autoplay="autoplay">
-                        <source src="vid/Meeting-Room.mp4" type="video/mp4"/>
-                    </video>
+    <script src='./js/jqBootstrapValidation.js'></script>
+    <script src='./js/formHandler.js'></script>
+    <title></title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    <!-- Hero Bloc -->
+    <div id="hero-bloc" class="bloc hero bgc-white b-divider bg-Meeting-Room d-bloc">
+        <div class="video-bg-contianer">
+            <video class="bloc-video" preload="auto" loop="loop" autoplay="autoplay">
+                <source src="vid/Meeting-Room.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="container hero-nav bloc-sm">
+            <nav class="navbar row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/roomflag_bevel3.png" alt="logo"/>
+                    </a>
+                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="container hero-nav bloc-sm">
-                    <nav class="navbar row">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="img/roomflag_bevel3.png" alt="logo"/>
-                            </a>
-                            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse navbar-1">
-                            <ul class="site-navigation nav navbar-nav pull-right">
-                                <li>
-                                    <a href="index.html" class="ltc-white">Home</a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="http://aster.enterprises" class="ltc-white">Company</a>
-                                </li>
-                                <li>
-                                    <a href="http://app.roomflag.com" class="btn-islamic-green loginButton">Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <div class="collapse navbar-collapse navbar-1">
+                    <ul class="site-navigation nav navbar-nav pull-right">
+                        <li>
+                            <a href="index.html" class="ltc-white">Home</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://aster.enterprises" class="ltc-white">Company</a>
+                        </li>
+                        <li>
+                            <a href="http://app.roomflag.com" class="btn-white loginButton">Login</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="v-center">
-                    <div class="vc-content row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 col-md-offset-3">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VheoJ7mNLCo?rel=0&amp;amp;amp;showinfo=0" frameborder="0">
-</iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h1 class=" text-center mg-clear tc-white lg-shadow">
-					The best way to track your rooms. ™</h1>
-                            <div class="row voffset">
-                                <div class="col-sm-3">
-</div>
-                                <div class="col-sm-6">
-                                    <form class="emailForm" action="javascript:return;" novalidate>
-                                        <div class="form-group">
-                                            <label>
-                                                Email
-</label>
-                                            <input class="form-control email" type="email" required placeholder="email address"/>
-                                        </div>
-                                        <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
-                                            Notify me when it's ready
-</button>
-                                    </form>
-                                    <p class="mg-sm"></p>
-                                </div>
-                                <div class="col-sm-3">
-</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bloc l-bloc bgc-white" id="bloc-6" data-pg-collapsed>
-                <div class="container bloc-md">
+            </nav>
+        </div>
+        <div class="v-center">
+            <div class="vc-content row">
+                <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img src="img/roomflag_frontDesk.jpg" class="img-responsive img-rd center-block"/>
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/roomflag_still_wall.png" class="img-responsive img-rd center-block"/>
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/roomflag_multi_device.jpg" class="img-responsive img-rd center-block"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hero Bloc END -->
-            <!-- bloc-2 -->
-            <div class="bloc bgc-white l-bloc" id="bloc-2" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center mg-md tc-outer-space">
-					Start saving time today</h1>
-                            <p class="sub-heading text-center ">
-					The easiest way to know what's happening in all of your organization's facilities.</p>
-                        </div>
-                    </div>
-                    <div class="row voffset-md">
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <span class="et-icon-profile-male icon-profile-male icon-profile-female icon-xl animated bounceIn icon-purple-munsell"></span>
-                            </div>
-                            <h3 class="text-center mg-md"><strong>1.</strong> Register an account</h3>
-                            <p class="mg-md  text-left text-center">
-					Create your organization, status-labels, and add your rooms.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <span class="et-icon-mobile icon-mobile icon-xl animated bounceIn icon-han-purple"></span>
-                            </div>
-                            <h3 class="text-center mg-md"><strong>2.</strong> Set a device in each room</h3>
-                            <p class=" text-left text-center">
-					Securely mount your devices inside the rooms. Or, let your employees connect with their own devices.<br/><br/><!--<a href="index.html">→ view our recommended devices.</a>--></p>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <span class="et-icon-presentation icon-presentation icon-xl animated bounceIn icon-lime-green"></span>
-                            </div>
-                            <h3 class="text-center mg-md"><strong>3.</strong> Enjoy</h3>
-                            <p class=" text-left text-center">
-					RoomFlag keeps everyone on the same page so that you can save time and provide the best service.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-2 END -->
-            <!-- bloc-3 -->
-            <div class="bloc bgc-ghost-white b-divider bg-vestibule-marcus-pink d-bloc" id="bloc-3" data-pg-collapsed>
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-sm-3">
-</div>
-                                <div class="col-sm-6">
-                                    <div class="panel bgc-white">
-                                        <div class="panel-body">
-                                            <form class="emailForm" action="javascript:return;" novalidate>
-                                                <h2 class="text-center tc-outer-space mg-md"><strong>100,000+</strong> Room-statuses tracked</h2>
-                                                <p class="text-left text-center  mg-md">
-										We're re-opening new registrations soon. Let us remind you when it's ready.</p>
-                                                <div class="form-group">
-                                                    <input class="form-control email" type="email" required placeholder="email address"/>
-                                                </div>
-                                                <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
-                                                    Notify me when it's ready
-</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <p class="mg-sm"></p>
-                                </div>
-                                <div class="col-sm-3">
-</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-3 END -->
-            <!-- bloc-4 -->
-            <div class="bloc tc-dim-gray bgc-white l-bloc" id="bloc-4" data-pg-collapsed>
-                <div class="container bloc-sm">
-                    <div class="row voffset-lg">
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <span class="et-icon-speedometer icon-happy icon-xl icon-lime-green"></span>
-                            </div>
-                            <h3 class="text-center mg-md tc-outer-space">
-					See what's Happening</h3>
-                            <p class="text-left text-center">
-					No more uncertainty. No more exposing dirty rooms to your clients as they walk by. RoomFlag tells your employees which rooms are available, need cleaning, etc.</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <span class="et-icon-chat icon-chat icon-xl icon-azure"></span>
-                            </div>
-                            <h3 class="text-center mg-md tc-outer-space">
-					Quickly Communicate</h3>
-                            <p class="text-left text-center">
-					No more running back and forth. Your team can instantly send pre-configured messages to and from the front desk to save time and work quicker.</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <span class="et-icon-caution icon-alarmclock icon-mobile icon-xl icon-han-purple"></span>
-                            </div>
-                            <h3 class="text-center mg-md tc-outer-space">
-					Be Alerted</h3>
-                            <p class="text-left text-center">
-					No more leaving clients or dirty rooms unattended for too long. RoomFlag can be configured to send alerts when too much time has passed in a room without activity.</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="text-center">
-                                <span class="et-icon-mobile icon-mobile icon-global icon-xl icon-purple-munsell"></span>
-                            </div>
-                            <h3 class="text-center mg-md tc-outer-space">
-					Use any Device</h3>
-                            <p class="text-left text-center">
-					No need to close shop and break walls or re-route circuitry. Use RoomFlag on any tablet, smartphone, or computer. Bring your own devices, or use our <a href="index.html">recommended devices</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-4 END -->
-            <!-- bloc-5 -->
-            <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-5" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center  mg-lg tc-black sm-shadow">
-					All of your Rooms in one View.</h1>
-                            <div class="row voffset-lg">
-                                <div class="col-sm-6">
-                                    <img src="img/HQ.png" class="center-block img-responsive"/>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="row voffset">
-                                        <div class="col-sm-12">
-                                            <h3 class=" mg-lg tc-dim-gray">
-									No more running back and forth.</h3>
-                                            <p class=" mg-lg">
-									RoomFlag reveals what's happening in every room.<br/><br/>Know which rooms are vacant, in use, dirty, or in other states using RoomFlag's customizable color-coded status labels.<br/><br/>Receptionists no longer have to leave clients alone at the lobby or risk disrupting room-occupants.<br/><br/>Cleaning staff can now know the moment a room has been vacated.</p>
-                                            <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-islamic-green">Start now</a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <h6 class="mg-md"></h6>
+                        <div class="col-sm-12 col-md-6 col-md-offset-3">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VheoJ7mNLCo?rel=0&amp;amp;amp;showinfo=0" frameborder="0">
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- bloc-5 END -->
-            <!-- bloc-6 -->
-            <!-- bloc-6 END -->
-            <!-- bloc-7 -->
-            <div class="bloc bg-bl-edge tc-dim-gray bgc-white l-bloc" id="bloc-7" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center  mg-lg tc-black sm-shadow">
-					Update Room-Statuses in a Snap</h1>
-                            <div class="row voffset-lg">
-                                <div class="col-sm-6">
-                                    <img src="img/roomflag_still_wallMount.png" class="img-responsive center-block img-rd"/>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h3 class=" mg-lg tc-dim-gray">
-									One-touch communication.</h3>
-                                            <p class=" mg-lg">
-									Update a room using any device with a single click.<br/><br/>You don't have to limit yourself to a fixed set of status labels. Set up as many different status labels as you like, and use as many different colors as you like.<br/><br/>Mount your Room Devices inside the rooms so that they're always visible. This is great for businesses like waxing salons whose clients are uncomfortable with employees pulling cell phones out of their pockets.<br/><br/>Or, let your staff connect when they need to with their own devices.</p>
-                                            <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-islamic-green">Start now</a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <h6 class="mg-md"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-7 END -->
-            <!-- bloc-8 -->
-            <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-8" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center  mg-lg tc-black sm-shadow">
-					Keep your Team on Track</h1>
-                            <div class="row voffset-lg">
-                                <div class="col-sm-6">
-                                    <img src="img/alerts_set.gif" class="img-responsive center-block"/>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h3 class=" tc-dim-gray mg-lg">
-									Never lose track of time again.</h3>
-                                            <p class=" mg-lg">
-									RoomFlag monitors each room throughout the day. It can be configured to send alerts when:<br/><br/> • a client has been left alone in a room for too long<br/> • a room has been left dirty for too long<br/> • a customer has been using a room for too long<br/> • or when other custom alarms go off<br/></p>
-                                            <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-islamic-green">Start now</a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <h6 class="mg-md"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-8 END -->
-            <!-- bloc-9 -->
-            <div class="bloc bg-bl-edge tc-dim-gray bgc-white l-bloc" id="bloc-9" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center  mg-lg tc-black sm-shadow">
-					Quick 2-way Requests</h1>
-                            <div class="row voffset-lg">
-                                <div class="col-sm-6">
-                                    <img src="img/RoomFlag_requests_android.png" class="img-responsive center-block"/>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h3 class=" mg-lg tc-dim-gray">
-									Save time and increase productivity.</h3>
-                                            <p class=" mg-lg">
-									Staff shouldn't have to keep running out of the room just to ask the same yes or no questions.<br/><br/>With RoomFlag's 2-way requests, customize messages to be sent from inside the rooms to the front desk HQ.<br/><br/>So the next time a client would like an additional service that they didn't schedule for, your staff can use RoomFlag to ask the front desk if there is enough time for it. No more leaving clients by themselves.</p>
-                                            <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-islamic-green">Start now</a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <h6 class="mg-md"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-9 END -->
-            <!-- bloc-10 -->
-            <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-10" data-pg-collapsed>
-                <div class="container bloc-md">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center  mg-lg tc-black sm-shadow">
-					Single-Location and Enterprise</h1>
-                            <div class="row voffset-lg">
-                                <div class="col-sm-6">
-                                    <img src="img/RoomFlag_multi_location.png" class="center-block img-responsive"/>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h3 class=" mg-lg tc-outer-space">
-									We scale with your organization</h3>
-                                            <p class=" mg-lg">
-									Our intuitive administrative interface makes it easy to set up RoomFlag for your Organization.<br/><br/>Creating additional locations can be done in a single click, and triggers additional functionality.<br/><br/>It's easy to invite people to your organization, as well as to assign roles - such as site managers or staff.</p>
-                                            <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-islamic-green">Start now</a>-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <h6 class="mg-md"></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-10 END -->
-            <!-- bloc-11 -->
-            <div class="bloc l-bloc bgc-white" id="bloc-11" data-pg-collapsed>
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3 class="text-center mg-md">
-					Thanks to our Customers and Supporters</h3>
-                        </div>
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="col-sm-3">
-                                <img src="img/domi_dark_s.png" class="center-block" height="70"/>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/Brazils-Logo-PNG.png" class="center-block" height="50"/>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/JH_Creative_Logo.png" class="center-block" height="80"/>
-                            </div>
-                            <div class="col-sm-3">
-                                <img src="img/fsu2.jpg" class="center-block" height="80"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-11 END -->
-            <!-- bloc-12 -->
-            <div class="bloc bg-repeat bgc-white tc-outer-space" id="bloc-12" data-pg-collapsed>
-                <div class="container bloc-lg">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img src="img/brazils.png" class="img-responsive"/>
-                        </div>
-                        <div class="col-sm-6">
-                            <h2 class="mg-md  tc-outer-space">
-					Brazils waxing center</h2>
-                            <p>
-					Brazils uses RoomFlag in all of their locations spanning multiple cities. RoomFlag removed a bottleneck at check-in by removing the need to keep the nursing stations near the receptionist. It also removed the need to print out assignments for their technicians. Brazils handles more clients per day with RoomFlag.<br/><br/><a class="ltc-outer-space" onclick="scrollToTarget('1')">→ watch video</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-12 END -->
-            <!-- bloc-13 -->
-            <div class="bloc bg-repeat b-divider bgc-light-cyan l-bloc" id="bloc-13" data-pg-collapsed>
-                <div class="container bloc-lg">
+                    <h1 class=" text-center mg-clear tc-white lg-shadow">
+                        The best way to track your rooms. ™</h1>
                     <div class="row voffset">
                         <div class="col-sm-3">
-</div>
+                        </div>
                         <div class="col-sm-6">
                             <form class="emailForm" action="javascript:return;" novalidate>
-                                <h1 class="mg-md text-center  tc-outer-space">
-						Start saving time</h1>
-                                <p class="mg-lg text-left text-center ">
-						We're re-opening new registrations by soon.</p>
                                 <div class="form-group">
                                     <label>
                                         Email
-</label>
+                                    </label>
                                     <input class="form-control email" type="email" required placeholder="email address"/>
                                 </div>
-                                <button class="bloc-button btn btn-block btn-xl btn-islamic-green btn-glossy" type="submit">
+                                <button class="bloc-button btn btn-block btn-xl btn-azure btn-glossy" type="submit">
                                     Notify me when it's ready
-</button>
+                                </button>
                             </form>
                             <p class="mg-sm"></p>
                         </div>
                         <div class="col-sm-3">
-</div>
-                    </div>
-                    <div class="row voffset">
-                        <div class="col-sm-12">
-                            <h2 class="text-center  tc-outer-space mg-lg"><strong><br/>100,000+</strong> Room-statuses tracked, and counting.</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- bloc-13 END -->
         </div>
-        <!-- Main container END -->
-        <script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='https://widget.uservoice.com/b7qjrfoZHO6pDKuwgbVjxA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+    </div>
+    <div class="bloc l-bloc bgc-white" id="bloc-6" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/roomflag_frontDesk.jpg" class="img-responsive img-rd center-block"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/roomflag_still_wall.png" class="img-responsive img-rd center-block"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/roomflag_multi_device.jpg" class="img-responsive img-rd center-block"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Bloc END -->
+    <!-- bloc-2 -->
+    <div class="bloc bgc-white l-bloc" id="bloc-2" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center mg-md tc-outer-space">
+                        Start saving time today</h1>
+                    <p class="sub-heading text-center ">
+                        The easiest way to know what's happening in all of your organization's facilities.</p>
+                </div>
+            </div>
+            <div class="row voffset-md">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-profile-male icon-profile-male icon-profile-female icon-xl animated bounceIn icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md"><strong>1.</strong> Register an account</h3>
+                    <p class="mg-md  text-left text-center">
+                        Create your organization, status-labels, and add your rooms.</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-mobile icon-mobile icon-xl animated bounceIn icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md"><strong>2.</strong> Set a device in each room</h3>
+                    <p class=" text-left text-center">
+                        Securely mount your devices inside the rooms. Or, let your employees connect with their own devices.<br/><br/><!--<a href="index.html">→ view our recommended devices.</a>--></p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <span class="et-icon-presentation icon-presentation icon-xl animated bounceIn icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md"><strong>3.</strong> Enjoy</h3>
+                    <p class=" text-left text-center">
+                        RoomFlag keeps everyone on the same page so that you can save time and provide the best service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-2 END -->
+    <!-- bloc-3 -->
+    <div class="bloc bgc-ghost-white b-divider bg-vestibule-marcus-pink d-bloc" id="bloc-3" data-pg-collapsed>
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="panel bgc-white">
+                                <div class="panel-body">
+                                    <form class="emailForm" action="javascript:return;" novalidate>
+                                        <h2 class="text-center tc-outer-space mg-md"><strong>100,000+</strong> Room-statuses tracked</h2>
+                                        <p class="text-left text-center  mg-md">
+                                            We're re-opening new registrations soon. Let us remind you when it's ready.</p>
+                                        <div class="form-group">
+                                            <input class="form-control email" type="email" required placeholder="email address"/>
+                                        </div>
+                                        <button class="bloc-button btn btn-block btn-xl btn-azure btn-glossy" type="submit">
+                                            Notify me when it's ready
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <p class="mg-sm"></p>
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-3 END -->
+    <!-- bloc-4 -->
+    <div class="bloc tc-dim-gray bgc-white l-bloc" id="bloc-4" data-pg-collapsed>
+        <div class="container bloc-sm">
+            <div class="row voffset-lg">
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-speedometer icon-happy icon-xl icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md tc-outer-space">
+                        See what's Happening</h3>
+                    <p class="text-left text-center">
+                        No more uncertainty. No more exposing dirty rooms to your clients as they walk by. RoomFlag tells your employees which rooms are available, need cleaning, etc.</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-chat icon-chat icon-xl icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md tc-outer-space">
+                        Quickly Communicate</h3>
+                    <p class="text-left text-center">
+                        No more running back and forth. Your team can instantly send pre-configured messages to and from the front desk to save time and work quicker.</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-caution icon-alarmclock icon-mobile icon-xl icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md tc-outer-space">
+                        Be Alerted</h3>
+                    <p class="text-left text-center">
+                        No more leaving clients or dirty rooms unattended for too long. RoomFlag can be configured to send alerts when too much time has passed in a room without activity.</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-mobile icon-mobile icon-global icon-xl icon-azure"></span>
+                    </div>
+                    <h3 class="text-center mg-md tc-outer-space">
+                        Use any Device</h3>
+                    <p class="text-left text-center">
+                        No need to close shop and break walls or re-route circuitry. Use RoomFlag on any tablet, smartphone, or computer. Bring your own devices, or use our <a href="index.html">recommended devices</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-4 END -->
+    <!-- bloc-5 -->
+    <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-5" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center  mg-lg tc-black sm-shadow">
+                        All of your Rooms in one View.</h1>
+                    <div class="row voffset-lg">
+                        <div class="col-sm-6">
+                            <img src="img/HQ.png" class="center-block img-responsive"/>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row voffset">
+                                <div class="col-sm-12">
+                                    <h3 class=" mg-lg tc-dim-gray">
+                                        No more running back and forth.</h3>
+                                    <p class=" mg-lg">
+                                        RoomFlag reveals what's happening in every room.<br/><br/>Know which rooms are vacant, in use, dirty, or in other states using RoomFlag's customizable color-coded status labels.<br/><br/>Receptionists no longer have to leave clients alone at the lobby or risk disrupting room-occupants.<br/><br/>Cleaning staff can now know the moment a room has been vacated.</p>
+                                    <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-azure">Start now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <h6 class="mg-md"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-5 END -->
+    <!-- bloc-6 -->
+    <!-- bloc-6 END -->
+    <!-- bloc-7 -->
+    <div class="bloc bg-bl-edge tc-dim-gray bgc-white l-bloc" id="bloc-7" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center  mg-lg tc-black sm-shadow">
+                        Update Room-Statuses in a Snap</h1>
+                    <div class="row voffset-lg">
+                        <div class="col-sm-6">
+                            <img src="img/roomflag_still_wallMount.png" class="img-responsive center-block img-rd"/>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class=" mg-lg tc-dim-gray">
+                                        One-touch communication.</h3>
+                                    <p class=" mg-lg">
+                                        Update a room using any device with a single click.<br/><br/>You don't have to limit yourself to a fixed set of status labels. Set up as many different status labels as you like, and use as many different colors as you like.<br/><br/>Mount your Room Devices inside the rooms so that they're always visible. This is great for businesses like waxing salons whose clients are uncomfortable with employees pulling cell phones out of their pockets.<br/><br/>Or, let your staff connect when they need to with their own devices.</p>
+                                    <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-azure">Start now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <h6 class="mg-md"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-7 END -->
+    <!-- bloc-8 -->
+    <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-8" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center  mg-lg tc-black sm-shadow">
+                        Keep your Team on Track</h1>
+                    <div class="row voffset-lg">
+                        <div class="col-sm-6">
+                            <img src="img/alerts_set.gif" class="img-responsive center-block"/>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class=" tc-dim-gray mg-lg">
+                                        Never lose track of time again.</h3>
+                                    <p class=" mg-lg">
+                                        RoomFlag monitors each room throughout the day. It can be configured to send alerts when:<br/><br/> • a client has been left alone in a room for too long<br/> • a room has been left dirty for too long<br/> • a customer has been using a room for too long<br/> • or when other custom alarms go off<br/></p>
+                                    <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-azure">Start now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <h6 class="mg-md"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-8 END -->
+    <!-- bloc-9 -->
+    <div class="bloc bg-bl-edge tc-dim-gray bgc-white l-bloc" id="bloc-9" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center  mg-lg tc-black sm-shadow">
+                        Quick 2-way Requests</h1>
+                    <div class="row voffset-lg">
+                        <div class="col-sm-6">
+                            <img src="img/RoomFlag_requests_android.png" class="img-responsive center-block"/>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class=" mg-lg tc-dim-gray">
+                                        Save time and increase productivity.</h3>
+                                    <p class=" mg-lg">
+                                        Staff shouldn't have to keep running out of the room just to ask the same yes or no questions.<br/><br/>With RoomFlag's 2-way requests, customize messages to be sent from inside the rooms to the front desk HQ.<br/><br/>So the next time a client would like an additional service that they didn't schedule for, your staff can use RoomFlag to ask the front desk if there is enough time for it. No more leaving clients by themselves.</p>
+                                    <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-azure">Start now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <h6 class="mg-md"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-9 END -->
+    <!-- bloc-10 -->
+    <div class="bloc bgc-white bg-bl-edge tc-dim-gray" id="bloc-10" data-pg-collapsed>
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center  mg-lg tc-black sm-shadow">
+                        Single-Location and Enterprise</h1>
+                    <div class="row voffset-lg">
+                        <div class="col-sm-6">
+                            <img src="img/RoomFlag_multi_location.png" class="center-block img-responsive"/>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h3 class=" mg-lg tc-outer-space">
+                                        We scale with your organization</h3>
+                                    <p class=" mg-lg">
+                                        Our intuitive administrative interface makes it easy to set up RoomFlag for your Organization.<br/><br/>Creating additional locations can be done in a single click, and triggers additional functionality.<br/><br/>It's easy to invite people to your organization, as well as to assign roles - such as site managers or staff.</p>
+                                    <!--<a href="index.html" class="btn   btn-glossy btn-lg btn-azure">Start now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <h6 class="mg-md"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-10 END -->
+    <!-- bloc-11 -->
+    <div class="bloc l-bloc bgc-white" id="bloc-11" data-pg-collapsed>
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center mg-md">
+                        Thanks to our Customers and Supporters</h3>
+                </div>
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <div class="col-sm-3">
+                        <img src="img/domi_dark_s.png" class="center-block" height="70"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/Brazils-Logo-PNG.png" class="center-block" height="50"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/JH_Creative_Logo.png" class="center-block" height="80"/>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/fsu2.jpg" class="center-block" height="80"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-11 END -->
+    <!-- bloc-12 -->
+    <div class="bloc bg-repeat bgc-white tc-outer-space" id="bloc-12" data-pg-collapsed>
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/brazils.png" class="img-responsive"/>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="mg-md  tc-outer-space">
+                        Brazils waxing center</h2>
+                    <p>
+                        Brazils uses RoomFlag in all of their locations spanning multiple cities. RoomFlag removed a bottleneck at check-in by removing the need to keep the nursing stations near the receptionist. It also removed the need to print out assignments for their technicians. Brazils handles more clients per day with RoomFlag.<br/><br/><a class="ltc-outer-space" onclick="scrollToTarget('1')">→ watch video</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-12 END -->
+    <!-- bloc-13 -->
+    <div class="bloc bg-repeat b-divider bgc-light-azure l-bloc" id="bloc-13" data-pg-collapsed>
+        <div class="container bloc-lg">
+            <div class="row voffset">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-6">
+                    <form class="emailForm" action="javascript:return;" novalidate>
+                        <h1 class="mg-md text-center  tc-outer-space">
+                            Start saving time</h1>
+                        <p class="mg-lg text-left text-center ">
+                            We're re-opening new registrations by soon.</p>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input class="form-control email" type="email" required placeholder="email address"/>
+                        </div>
+                        <button class="bloc-button btn btn-block btn-xl btn-azure btn-glossy" type="submit">
+                            Notify me when it's ready
+                        </button>
+                    </form>
+                    <p class="mg-sm"></p>
+                </div>
+                <div class="col-sm-3">
+                </div>
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-12">
+                    <h2 class="text-center  tc-outer-space mg-lg"><strong><br/>100,000+</strong> Room-statuses tracked, and counting.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bloc-13 END -->
+</div>
+<!-- Main container END -->
 
-    //
-    // UserVoice Javascript SDK developer documentation:
-    // https://www.uservoice.com/o/javascript-sdk
-    //
-
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#448dd6',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
-
-    // Identify the user and pass traits
-    // To enable, replace sample data with actual user traits and uncomment the line
-    UserVoice.push(['identify', {
-        //email:      'john.doe@example.com', // User’s email address
-        //name:       'John Doe', // User’s real name
-        //created_at: 1364406966, // Unix timestamp for the date the user signed up
-        //id:         123, // Optional: Unique id of the user (if set, this should not change)
-        //type:       'Owner', // Optional: segment your users by type
-        //account: {
-        //  id:           123, // Optional: associate multiple users with a single account
-        //  name:         'Acme, Co.', // Account name
-        //  created_at:   1364406966, // Unix timestamp for the date the account was created
-        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
-        //  ltv:          1495.00, // Decimal; lifetime value of the account
-        //  plan:         'Enhanced' // Plan name for the account
-        //}
-    }]);
-
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', {mode: 'contact', trigger_position: 'bottom-right' }]);
-
-    // Or, use your own custom trigger:
-    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
-
-    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
-</script>
-    </body>
-    <!-- Google Analytics -->
-    <!-- Google Analytics END -->
+</body>
+<!-- Google Analytics -->
+<!-- Google Analytics END -->
 </html>
