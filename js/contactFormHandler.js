@@ -45,6 +45,22 @@ $(function() {
           console.log(data);
           // toastr["success"]("Thank you. Look out for an email from us soon!");
           // alert("Thank you! We've set up a ticket for you and will let you know when we've opened our doors"); // You might want to redirect the user here, or show a stylized message to them.
+
+          var data = ' <div id="success_page" class="text-center"> \
+              <h2 style="text-align: center;">Email Sent Successfully.</h2> \
+              <p style="text-align: center;">Thank you! your message has been sent to us.</p> \
+              <br /> \
+          </div> ';
+          $("#message").slideUp(500, function() {
+            $('#message').hide();
+
+            document.getElementById('message').innerHTML = data;
+            $('#message').slideDown('slow');
+            $('#submit').removeAttr('disabled');
+            $('#contactform').slideUp('slow');
+
+          });
+
         })
         .fail(function(jqXHR, textStatus, errorThrown) {
           // console.log("HTTP Request Failed");
