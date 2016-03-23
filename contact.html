@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;" data-pgc-set-master>
+    <head>
+        <meta charset="utf-8">
+        <title>RoomFlag - Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pinegrow, blocks, bootstrap" />
+        <meta name="description" content="My new website" />
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+        <!-- Style Library -->
+        <link href="css/style-library-1.css" rel="stylesheet">
+        <link href="css/plugins.css" rel="stylesheet">
+        <link href="css/blocks.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/et-line.css" rel="stylesheet">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+        <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+        <link href="css/lwmods.css" rel="stylesheet" type="text/css">
+        <script src="js/login_state.js"></script>
+        <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-71923111-1', 'auto');
+    ga('send', 'pageview');
+
+    var loginState = LoginState.get("loginState");
+    if (loginState) {
+      window.location.href = "http://app.roomflag.com";
+    } else {
+      // user has not loggedIn yet.
+      console.log("NO LOGIN STATE FOUND")
+    }
+  </script>
+    </head>
+    <body data-spy="scroll" data-target="nav">
+        <header id="header-2" class="soft-scroll header-2 no-shadow">
+            <nav class="main-nav navbar no-shadow margin-bottom0 navbar-static-top bg-sunflower" style="border-bottom:0; ">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed bg-white" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html">
+                            <img src="img/roomflag_bevel3_copy_copy.png" style="max-height:70px" class="pad20" />
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="http://app.roomflag.com" target="blank">Log In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="http://aster.enterprises" target="blank">Company</a>
+                            </li>
+                            <!-- /.dropdown -->
+                            <li class="nav-item active">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <section class="content-block promo-1 bg-image-cover pad-bottom30 bg-sunflower">
+            <div class="container margin-top90">
+                <div class="row">
+                    <div>
+                        <h1 class="deepocean">Get in Touch<br></h1>
+                        <h4 style="padding:1em; font-weight:300; border: 1px solid #193441;" class="deepocean">Feel free to drop us a line</h4>
+                    </div>
+                    <!-- /.col -->
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+        </section>
+        <section class="content-block contact-1 pad90 pad-bottom90 bg-sunflower margin-bottom0">
+            <div class="container text-center bg-white" style="border-radius:6px;">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div id="contact" class="form-container">
+                        <div id="message"></div>
+                        <form method="post" action="js/contact-form.php" name="contactform" id="contactform">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input name="name" id="name" type="text" value="" placeholder="Name" class="form-control contact-name" required />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input name="email" id="email" type="email" value="" placeholder="Email" class="form-control email" required />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <input name="phone" id="phone" type="text" value="" placeholder="Phone" class="form-control contact-phone" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                            <div class="form-group">
+                                <textarea name="comments" id="comments" class="form-control contact-message" rows="3" placeholder="Message" id="textArea"></textarea>
+                                <p class="small text-muted"><span class="guardsman">* Name and Email are required.</span> Once we receive your message we will respond as soon as possible.</p>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-lg bg-light-turquoise" type="submit" id="cf-submit" name="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.form-container -->
+                </div>
+                <!-- /.col-sm-10 -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section class="content-block-nopad footer-wrap-1-1 bg-asbestos">
+            <div class="container footer-1-1">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="img/roomflag_bevel3_copy_copy.png" class="brand-img img-responsive">
+                        <h3>Next-generation facilities management.</h3>
+                        <p class="lead">RoomFlag is centralized digital status-tracking for all of your facilities. Our easy to use service and can log&nbsp;<strong>billions</strong> of status events throughout your resources to with millisecond-level precision.</p>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Shortcuts</h4>
+                                <ul>
+                                    <li>
+                                        <a href="http://aster.enterprises">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Documents</h4>
+                                <ul>
+                                    <li>
+                                        <a href="legal.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html">Cookie Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Follow Us</h4>
+                                <ul class="social social-light">
+                                    <li>
+                                        <a href="#"><i class="fa fa-2x fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-2x fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <div class="copyright-bar bg-asbestos">
+            <div class="container">
+                <p class="pull-left small">© Aster Enterprises</p>
+                <img src="img/roomflag_bevel3_copy_copy.png" class="brand-img pull-right" height="25px">
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/bskit-scripts.js"></script>
+        <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+        <script type="text/javascript" src="js/contactFormHandler.js"></script>
+    </body>
+</html>
