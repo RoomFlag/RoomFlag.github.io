@@ -76,15 +76,16 @@ null
 
 .outlineGrey
 {
-    outline: 10px solid #F1F1F1;
+    border: 10px solid #F5F5F5;
+    border-radius: 6px;
 }
+
 
 .darkGlow
 {
     border: 10px solid #F1F1F1;
     border-radius: 6px;
 }
-
 
 .bg-primary, .bg-primary-color
 {
