@@ -534,10 +534,33 @@ fbq('track', "PageView");</script>
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
-        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <!-- <script src="https://maps.google.com/maps/api/js?sensor=true"></script> -->
         <script type="text/javascript" src="js/bskit-scripts.js"></script>
         <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>         
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script type="text/javascript" src="js/formHandler.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.0/js.cookie.min.js"></script>
+        <script type="text/javascript" src="js/uuid.js"></script>
+        <script type="text/javascript" src="js/gaux.js"></script>
+        <script type="text/javascript">
+    $(function() {
+      gaux.track([
+        [
+          'click', '#managementToggle', {
+            eventAction: "clicked management toggle",
+            eventCategory: "marketing site",
+            page: "home"
+          }
+        ],
+        [
+          'click', '#staffToggle', {
+            eventAction: "clicked staff toggle",
+            eventCategory: "marketing site",
+            page: "home"
+          }
+        ]
+      ])
+    })
+  </script>
     </body>
 </html>
