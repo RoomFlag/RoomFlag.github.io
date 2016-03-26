@@ -78,13 +78,14 @@ null
 {
     border-style: solid;
     border-color: #F5F5F5;
-    border-width: 10px 18px;
+    border-width: 6px 11px;
     border-radius: 6px;
 }
 
+
 .darkGlow
 {
-    border: 10px solid #F5F5F5;
+    border: 6px solid #F5F5F5;
     border-radius: 6px;
 }
 
@@ -121,5 +122,4 @@ p
     border-left: 0px;
     border-right: 0px;
 }
-
 
