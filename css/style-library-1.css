@@ -950,14 +950,13 @@ a
 
 a:hover
 {
-    color: #38d148; /* #16a085; */
+    color: #38d148;
     text-decoration: none;
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
 
 /* LISTS */
 
@@ -1786,7 +1785,9 @@ fieldset[disabled] .form-control
 .nav-tabs
 {
     margin: 0 auto;
+    padding-bottom: 8px;
 }
+
 
 .nav-tabs > li
 {
@@ -1801,19 +1802,21 @@ fieldset[disabled] .form-control
     font-size: 2em;
     font-style: normal;
     color: #737c85;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    border: none !important;
-    border-bottom: 4px solid transparent !important;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #F5F5F5;
 }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus
 {
-    background-color: transparent;
-    border-bottom: 4px solid #38d148 !important;
+    background-color: #38d148;
+    color: #ffffff;
+    border-radius: 6px;
+    border-width: 2px;
 }
 
 .nav > li > a:hover,

@@ -3184,7 +3184,6 @@ input[type=date].input-sm,input[type=time].input-sm,input[type=datetime-local].i
 
 input[type=date].input-lg,input[type=time].input-lg,input[type=datetime-local].input-lg,input[type=month].input-lg {line-height:46px;line-height:1.33 \0}
 
-
 _:-ms-fullscreen,:root input[type=date],_:-ms-fullscreen,:root input[type=time],_:-ms-fullscreen,:root input[type=datetime-local],_:-ms-fullscreen,:root input[type=month]
 {
     line-height: 1.42857143;
@@ -4527,8 +4526,9 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 
 .nav-tabs
 {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #F5F5F5;
 }
+
 
 .nav-tabs>li
 {

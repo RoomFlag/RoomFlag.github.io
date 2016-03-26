@@ -82,7 +82,6 @@ null
     border-radius: 6px;
 }
 
-
 .darkGlow
 {
     border: 10px solid #F5F5F5;
@@ -115,4 +114,12 @@ p
 {
     color: #38d148 !important;
 }
+
+.trimmed
+{
+    border: 6px solid #F5F5F5;
+    border-left: 0px;
+    border-right: 0px;
+}
+
 
