@@ -121,7 +121,7 @@ Version: 1.0
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #3E606F;
+    border-bottom: 10px solid #38d148;
     position: absolute;
     right: 35px;
     top: -10px;
@@ -138,8 +138,8 @@ Version: 1.0
 
 #header-1 .main-nav .nav .dropdown-menu a:hover
 {
-    background: #193441;
-    color: #fff;
+    background: #ffffff;
+    color: #193441;
 }
 
 #header-1 .brand-img
@@ -353,16 +353,17 @@ Version: 1.0
 #header-2 .main-nav .nav .dropdown-menu a
 {
     padding: 8px 20px;
-    color: #666;
+    color: #ffffff;
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1;
 }
 
+
 #header-2 .main-nav .nav .dropdown-menu a:hover
 {
-    background: #3498DB;
-    color: #fff;
+    background: #ffffff;
+    color: #193441;
 }
 
 /* Override bootstrap default */
@@ -405,7 +406,7 @@ Version: 1.0
         height: 0;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid #3E606F;
+        border-bottom: 10px solid #38d148;
         position: absolute;
         right: 35px;
         top: -10px;
@@ -420,8 +421,8 @@ Version: 1.0
     }
     #header-2 .main-nav .nav .dropdown-menu a:hover
     {
-        background: #193441;
-        color: #fff;
+        background: #ffffff;
+        color: #193441;
     }
 }
 
@@ -4097,7 +4098,6 @@ Version: 1.0
     line-height: 19px;
     padding: 6px 0;
 }
-
 
 .footer-1-1 li:first-child
 {
