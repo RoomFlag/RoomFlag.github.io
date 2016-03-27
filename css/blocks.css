@@ -359,7 +359,6 @@ Version: 1.0
     opacity: 1;
 }
 
-
 #header-2 .main-nav .nav .dropdown-menu a:hover
 {
     background: #ffffff;
@@ -2473,9 +2472,10 @@ Version: 1.0
 
 .content-3-10
 {
-    padding: 0px;
+    //padding: 0px;
     position: relative;
 }
+
 
 .content-3-10 .image-container
 {
