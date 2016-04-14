@@ -30,7 +30,6 @@
         <link href="scripts/animations/animate.css" rel="stylesheet"> 
         <!-- Datepicker Styles -->         
         <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet"> 
-        <!-- Favicons -->         
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->         
         <!--[if lt IE 9]>
       <script src="scripts/html5shiv.js"></script>
@@ -156,6 +155,10 @@
             <!-- TEXT 1COL BLOCK -->             
             <!-- FOOTER LIST -->             
             <!-- NAVIGATION LOGIN FULL -->             
+            <!-- CONTACT HALF TEAM BLOCK -->             
+            <!-- MODAL CONTACT WINDOWS-->             
+            <!-- FOOTER LIST -->             
+            <!-- NAVIGATION LOGIN FULL -->             
             <nav class="navbar bg-color3" src="/elements/images/trends_graph.png?v=2" style="color: rgb(85, 85, 85); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 1px 0px; background-color: rgb(255, 255, 255);">
                 <div class="container-fluid">
                     <a class="navbar-brand goto" href="index.html">
@@ -184,64 +187,60 @@
                     </div>
                 </div>
             </nav>
-            <!-- CONTACT HALF TEAM BLOCK -->             
-            <section id="contact-half-team" class="bg-color2 cover-bg" style="background-image: url(&quot;images/bg28.jpg&quot;);"> 
+            <!-- CONTACT HALF BLOCK -->             
+            <section id="contact-half" class="bg-color1 cover-bg" style="padding-top: 150px; padding-bottom: 150px; border-bottom-width: 0px; border-bottom-color: rgb(232, 232, 232); background-image: url(&quot;http://localhost:8888/elements/images/bg19.jpg&quot;); background-attachment: scroll; background-color: rgb(37, 40, 48); background-size: cover; background-repeat: no-repeat;" src="/elements/images/roomflag_frontDesk.jpg"> 
                 <div class="container"> 
                     <div class="row"> 
-                        <div class="col-md-5"> 
+                        <div class="col-md-6 dark-bg editContent">
+                            <h2 class="title">Request an <strong>Invite</strong></h2> 
+                            <p class="sep-bottom"> 
+	Join the businesses who are already saving time and money with RoomFlag. We'll reach out to you via email to go over how to get you set up.</p> 
+                            <ul class="data-list"> 
+                                <li>
+                                    <i class="icon icon-target2" src="http://www.roomflag.com/img/roomflag_logo_bg.png" id="ui-id-28"></i>Simple to set up, easy to use.
+                                </li>                                 
+                                <li>
+                                    <i class="icon icon-mobile" src="http://www.roomflag.com/img/roomflag_logo_bg.png" id="ui-id-29"></i> Accessible from anywhere with any computer or device.
+                                </li>                                 
+                                <li>
+                                    <i class="icon icon-bar-chart" src="http://www.roomflag.com/img/roomflag_logo_bg.png" id="ui-id-30"></i>  Increases efficiency and can expose critical botttlenecks
+                                </li>                                 
+                            </ul>
+                        </div>                         
+                        <div class="col-md-5 col-md-offset-1"> 
                             <div class="form-container"> 
-                                <h3 class="title">Drop us a Line</h3> 
+                                <h3 class="title">Give me an invite</h3> 
                                 <form action="#" role="form" id="contact_form" novalidate="novalidate">
                                     <div class="form-group"> 
-                                        <input type="text" class="form-control" id="contact_name" placeholder="Full name" name="name"> 
+                                        <input type="text" class="form-control" id="contact_name" placeholder="Full name" name="name">
                                     </div>                                     
                                     <div class="form-group"> 
-                                        <input type="email" class="form-control" id="contact_email" placeholder="Email Address" name="email"> 
-                                    </div>
+                                        <input type="email" class="form-control" id="contact_email" placeholder="Email Address" name="email">
+                                    </div>                                     
                                     <div class="form-group">
-                                        <input type="tel" class="form-control" id="contact_phone" placeholder="Phone Number" name="phone">
+                                        <input type="text" class="form-control" id="company_name" placeholder="Company name" name="companyName">
                                     </div>
-                                    <div class="form-group"> 
-                                        <textarea class="form-control" rows="4" placeholder="Your message or question" id="contact_message" name="message"></textarea>                                         
-                                    </div>
-                                    <input type="hidden" name="campaign" id="campaign" value="contactForm">
-                                    <button type="submit" id="contact_submit" data-loading-text="•••" class="btn btn-lg btn-block btn-primary">Send</button>                                     
+                                    <input type="hidden" name="campaign" id="campaign" value="RSVP">
+                                    <button type="submit" id="contact_submit" data-loading-text="•••" class="btn btn-lg btn-block btn-primary">
+                                        <i class="icon icon-paper-plane"></i>Send
+                                    </button>                                     
                                 </form>                                 
-                            </div>                             
-                        </div>                         
-                        <div class="col-md-6 col-md-offset-1 dark-bg"> 
-                            <h2 class="title"><strong>Get in Touch</strong></h2> 
-                            <p class="sep-bottom editContent">Feel free to drop us a line. Phone hours are M-F from 9-5pm ET.</p> 
-                            <div class="row sep-half-bottom"> 
-                                <div class="col-sm-3"> 
-</div>                                 
-                                <div class="col-sm-9 editContent">
-                                    <h3 class="title">Aster Enterprises</h3> 
-                                    <p> <i class="icon icon-call-in"></i> +(1) 260-632-7876</p> 
-                                    <p> <i class="icon icon-envelope"></i> hello@roomflag.com</p>
-                                </div>                                 
-                            </div>                             
-                            <div class="row"> 
-                                <div class="col-sm-3"> 
-</div>                                 
-                                <div class="col-sm-9 editContent"> 
-</div>                                 
                             </div>                             
                         </div>                         
                     </div>                     
                 </div>                 
             </section>             
             <!-- MODAL CONTACT WINDOWS-->             
-            <div class="modal fade" id="modalContactSuccess" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;"> 
-                <div class="modal-dialog" style="margin-top: 60px; transform: none; -webkit-transform: none;"> 
+            <div class="modal fade" id="modalContactSuccess" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="modal-dialog"> 
                     <div class="modal-content"> 
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>                         
                         <h3 class="modal-title"><i class="icon icon-envelope-open"></i>Well done!<br>Your message has been successfully sent!</h3> 
                     </div>                     
                 </div>                 
             </div>             
-            <div class="modal fade" id="modalContactError" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;"> 
-                <div class="modal-dialog" style="margin-top: 60px; transform: none; -webkit-transform: none;"> 
+            <div class="modal fade" id="modalContactError" tabindex="-1" role="dialog" aria-hidden="true"> 
+                <div class="modal-dialog"> 
                     <div class="modal-content"> 
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>                         
                         <h3 class="modal-title"><i class="icon icon-ban"></i>Oops!<br>Something went wrong!</h3> 
@@ -334,6 +333,32 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.0/js.cookie.min.js"></script>
         <script src="scripts/uuid.js"></script>         
-        <script src="scripts/gaux.js"></script>         
+        <script src="scripts/gaux.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": true,
+                "onclick": null,
+                "timeOut": "50000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            var successMsg = "Your message has been sent."; // Message shown on success.
+            var failMsg = "Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"; // Message shown on fail.
+
+        });
+
+    </script>
+
     </body>
 </html>
