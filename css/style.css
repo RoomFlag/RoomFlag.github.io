@@ -4389,7 +4389,6 @@ ul.posts-line .post .title
     padding-bottom: 200px;
 }
 
-
 .top-double-padding
 {
     padding-top: 250px;
@@ -4453,4 +4452,12 @@ ul.posts-line .post .title
         padding-bottom: 56.25%;
     }
 }
+
+section.light-bg,
+header.light-bg,
+.no-sep
+{
+    border-bottom: none;
+}
+
 
